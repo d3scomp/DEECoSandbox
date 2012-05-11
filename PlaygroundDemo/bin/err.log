@@ -1,0 +1,44 @@
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+Exception in thread "MessageListener" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter$MessageListener.run(Remoter.java:153)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.DataInputStream.readFully(Unknown Source)
+	at java.io.DataInputStream.readLong(Unknown Source)
+	at com.zink.fly.stub.Remoter$MessageListener.run(Remoter.java:141)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)

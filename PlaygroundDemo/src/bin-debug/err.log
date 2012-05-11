@@ -1,0 +1,1041 @@
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+Exception in thread "MessageListener" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter$MessageListener.run(Remoter.java:153)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.DataInputStream.readFully(Unknown Source)
+	at java.io.DataInputStream.readLong(Unknown Source)
+	at com.zink.fly.stub.Remoter$MessageListener.run(Remoter.java:141)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+Exception in thread "MessageListener" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter$MessageListener.run(Remoter.java:153)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.DataInputStream.readFully(Unknown Source)
+	at java.io.DataInputStream.readLong(Unknown Source)
+	at com.zink.fly.stub.Remoter$MessageListener.run(Remoter.java:141)
+Exception in thread "MessageListener" Exception in thread "Thread-2" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-12" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:91)
+	... 8 more
+Exception in thread "Thread-8" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:91)
+	... 8 more
+Exception in thread "Thread-5" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:91)
+	... 8 more
+Exception in thread "Thread-11" Exception in thread "Thread-4" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:91)
+	... 8 more
+Exception in thread "Thread-9" Exception in thread "Thread-10" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:91)
+	... 8 more
+com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:91)
+	... 8 more
+Exception in thread "Thread-6" Exception in thread "Thread-3" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:91)
+	... 8 more
+com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:91)
+	... 8 more
+com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:91)
+	... 8 more
+Exception in thread "Thread-2" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-11" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-10" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-9" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-6" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-5" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-3" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-12" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-4" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-8" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-4" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-12" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-9" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-8" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-5" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-11" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-10" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-2" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-3" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-6" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-5" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-8" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-11" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-12" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-3" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-6" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-10" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-9" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-2" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+Exception in thread "Thread-4" com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:150)
+	at com.zink.fly.stub.FlyStub.take(FlyStub.java:76)
+	at d3s.playground.runtime.GlobalKnowledgeBase.updateKnowledge(GlobalKnowledgeBase.java:37)
+	at d3s.playground.runtime.DEECoRuntime.localKnowledgeChanged(DEECoRuntime.java:59)
+	at d3s.components.Component$1.run(Component.java:37)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:125)
+	at com.zink.fly.stub.TypeChain.getChannel(TypeChain.java:73)
+	at com.zink.fly.stub.MethodCodec.take(MethodCodec.java:135)
+	... 5 more
+Caused by: com.zink.fly.FlyAccessException: Error accessing Fly caused by :
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:96)
+	at com.zink.fly.stub.TypeChain.createBridge(TypeChain.java:108)
+	... 7 more
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(Unknown Source)
+	at java.util.concurrent.locks.ReentrantLock.lockInterruptibly(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at com.zink.fly.stub.Remoter.sendOperation(Remoter.java:93)
+	... 8 more
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at d3s.components.Component$1.run(Component.java:39)
+	at java.lang.Thread.run(Unknown Source)
+Exception in thread "MessageListener" 

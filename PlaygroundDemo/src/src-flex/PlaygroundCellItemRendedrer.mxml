@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:ItemRenderer xmlns:fx="http://ns.adobe.com/mxml/2009"
+				xmlns:s="library://ns.adobe.com/flex/spark"
+				xmlns:mx="library://ns.adobe.com/flex/mx"
+				autoDrawBackground="true"
+				width="100%"
+				height="100%">
+	<fx:Script>
+		<![CDATA[
+			import d3s.playground.vos.Field;
+			
+			import view.grid.MovePane;
+			
+			public static const ENABLED_COLOR:uint = 0x00FF00;
+			public static const DISABLED_COLOR:uint = 0xAAAAAA;
+			public static const PATH_COLOR:uint = 0xFF0044;
+			public static const CHECKPOINT_COLOR:uint = 0x00FFFF;
+			
+			public static var DISABLED:Vector.<Field>;
+			
+			private function cast(o:Object):Field {
+				return o as Field;
+			}
+		]]>
+	</fx:Script>
+	<s:Group width="100%"
+			 height="100%">
+		<s:Rect width="100%"
+				height="100%">
+			<s:fill>
+				<s:SolidColor color="{cast(data).color}"
+							  alpha=".7"/>
+			</s:fill>
+			<s:stroke>
+				<s:SolidColorStroke color="0x000000"/>
+			</s:stroke>
+		</s:Rect>
+		<s:Label text="{cast(data).id}"
+				 bottom="5"
+				 left="5"/>
+	</s:Group>
+</s:ItemRenderer>

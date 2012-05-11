@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+		 xmlns:s="library://ns.adobe.com/flex/spark"
+		 xmlns:mx="library://ns.adobe.com/flex/mx"
+		 mouseEnabled="false"
+		 xmlns:local="*">
+	<fx:Declarations>
+		<s:Sequence id="pathEffect"
+					target="{path}">
+			<s:Fade alphaFrom=".0"
+					alphaTo=".7"
+					duration="200"/>
+			<s:Fade alphaFrom=".7"
+					alphaTo=".0"
+					duration="200"/>
+		</s:Sequence>
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import d3s.playground.knowledges.RobotKnowledge;
+			
+			import view.enums.EnumMove;
+			import view.grid.MovePane;
+
+			private static const FILL_COLOR_ODD:uint=0xFFFF00;
+			private static const FILL_COLOR_EVEN:uint=0x0000FF;
+			private static const STROKE_COLOR:uint=0x000000;
+
+			[Bindable]
+			public var robotKnowledge:RobotKnowledge;
+
+			public function drawPath(rv:RobotView):void
+			{
+				if (pathEffect.isPlaying)
+					pathEffect.stop();
+				var cX:int=MovePane.CELL_DISTANCE / 2;
+				var cY:int=MovePane.CELL_DISTANCE / 2;
+				var ps:String="M " + cX + " " + cY + " ";
+				for each (var direction:EnumMove in robotKnowledge.orientationPath.path)
+				{
+					switch (direction.ordinal)
+					{
+						case EnumMove.RIGHT.ordinal:
+							cX+=MovePane.CELL_DISTANCE;
+							break;
+						case EnumMove.LEFT.ordinal:
+							cX-=MovePane.CELL_DISTANCE;
+							break;
+						case EnumMove.FORWARD.ordinal:
+							cY-=MovePane.CELL_DISTANCE;
+							break;
+						case EnumMove.BACKWARD.ordinal:
+							cY+=MovePane.CELL_DISTANCE;
+							break;
+					}
+					ps+="L " + cX + " " + cY + " ";
+				}
+				path.data=ps;
+				pathEffect.play();
+				trace(robotKnowledge.id + ": " + robotKnowledge.path);
+			}
+		]]>
+	</fx:Script>
+	<s:Path id="path"
+			alpha="0.0">
+		<s:stroke>
+			<s:SolidColorStroke color="{robotColor.color}"
+								weight="3"/>
+		</s:stroke>
+	</s:Path>
+	<s:Group verticalCenter="0"
+			 horizontalCenter="0"
+			 width="{this.width*2/3}"
+			 height="{this.height*2/3}"
+			 rollOut="{details.indShow = false}"
+			 rollOver="{details.indShow = true}">
+		<s:Rect width="100%"
+				height="100%"
+				radiusX="5"
+				radiusY="5">
+			<s:fill>
+				<s:SolidColor id="robotColor"
+							  color="{FILL_COLOR_ODD}"
+							  alpha=".9"/>
+			</s:fill>
+			<s:stroke>
+				<s:SolidColorStroke color="{STROKE_COLOR}"
+									alpha=".7"
+									weight="2"/>
+			</s:stroke>
+		</s:Rect>
+		<s:Label text="R{robotKnowledge.id}"
+				 verticalCenter="2"
+				 horizontalCenter="0"
+				 fontWeight="bold"
+				 fontSize="10"/>
+	</s:Group>
+	<local:RobotDetails id="details"
+						x="{this.width}"
+						robotKnowledge="{robotKnowledge}"/>
+</s:Group>

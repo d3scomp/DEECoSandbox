@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:ItemRenderer xmlns:fx="http://ns.adobe.com/mxml/2009"
+				xmlns:s="library://ns.adobe.com/flex/spark"
+				xmlns:mx="library://ns.adobe.com/flex/mx"
+				depth="0"
+				depth.hovered="1"
+				depth.selected="2"
+				alpha=".7"
+				alpha.selected="1.0"
+				alpha.hovered="1.0"
+				width="250"
+				autoDrawBackground="false">
+	<fx:Declarations>
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import d3s.playground.vos.CrossingFields;
+			import d3s.playground.vos.CrossingFieldsOccupancy;
+
+
+			public function toStringCust(data:Object):String
+			{
+				if (data is CrossingFields)
+					return DetailsUtils.toString((data as CrossingFields).fields);
+				else if (data is CrossingFieldsOccupancy) {
+					return data.toString();
+				}
+				return "";
+			}
+		]]>
+	</fx:Script>
+	<s:postLayoutTransformOffsets>
+		<mx:TransformOffsets id="tOffsets"
+							 scaleX="1"
+							 scaleY="1"
+							 x.hovered="-50"
+							 y.hovered="-6"
+							 scaleX.hovered="1.2"
+							 scaleY.hovered="1.2"
+							 x.selected="-50"
+							 y.selected="-6"
+							 scaleX.selected="1.2"
+							 scaleY.selected="1.2"/>
+	</s:postLayoutTransformOffsets>
+
+	<s:states>
+		<s:State name="normal"/>
+		<s:State name="hovered"/>
+		<s:State name="selected"/>
+	</s:states>
+
+	<s:transitions>
+		<mx:Transition fromState="normal"
+					   toState="hovered"
+					   autoReverse="true">
+			<s:Animate target="{tOffsets}"
+					   duration="200">
+				<s:SimpleMotionPath property="scaleX"/>
+				<s:SimpleMotionPath property="scaleY"/>
+				<s:SimpleMotionPath property="x"/>
+				<s:SimpleMotionPath property="y"/>
+			</s:Animate>
+		</mx:Transition>
+		<mx:Transition fromState="hovered"
+					   toState="normal"
+					   autoReverse="true">
+			<s:Animate target="{tOffsets}"
+					   duration="200">
+				<s:SimpleMotionPath property="scaleX"/>
+				<s:SimpleMotionPath property="scaleY"/>
+				<s:SimpleMotionPath property="x"/>
+				<s:SimpleMotionPath property="y"/>
+			</s:Animate>
+		</mx:Transition>
+	</s:transitions>
+	<s:Rect width="100%"
+			height="100%"
+			radiusX="5"
+			radiusY="5">
+		<s:fill>
+			<s:SolidColor color="0"
+						  alpha=".9"/>
+		</s:fill>
+	</s:Rect>
+	<mx:Grid width="100%"
+			 paddingBottom="5"
+			 paddingTop="5"
+			 paddingLeft="5"
+			 paddingRight="5">
+		<mx:GridRow toolTip="Observed cells"
+					width="100%">
+			<mx:GridItem>
+				<s:Label text="OC:"/>
+			</mx:GridItem>
+			<mx:GridItem width="100%">
+				<s:Label width="100%"
+						 text="{toStringCust(data.observedFields)}"
+						 maxDisplayedLines="2"
+						 maxWidth="350"/>
+			</mx:GridItem>
+		</mx:GridRow>
+		<mx:GridRow toolTip="Observed cells occupancy"
+					width="100%">
+			<mx:GridItem>
+				<s:Label text="OO:"/>
+			</mx:GridItem>
+			<mx:GridItem width="100%">
+				<s:Label width="100%"
+						 text="{toStringCust(data.observedFieldsOccupancy)}"
+						 maxDisplayedLines="2"
+						 maxWidth="350"/>
+			</mx:GridItem>
+		</mx:GridRow>
+		<mx:GridRow toolTip="Entry cells"
+					width="100%">
+			<mx:GridItem>
+				<s:Label text="EnC:"/>
+			</mx:GridItem>
+			<mx:GridItem width="100%">
+				<s:Label width="100%"
+						 text="{toStringCust(data.entries)}"
+						 maxDisplayedLines="2"
+						 maxWidth="350"/>
+			</mx:GridItem>
+		</mx:GridRow>
+		<mx:GridRow toolTip="Entry cells occupancy"
+					width="100%">
+			<mx:GridItem>
+				<s:Label text="EnO:"/>
+			</mx:GridItem>
+			<mx:GridItem width="100%">
+				<s:Label width="100%"
+						 text="{toStringCust(data.entriesOccupancy)}"
+						 maxDisplayedLines="2"
+						 maxWidth="350"/>
+			</mx:GridItem>
+		</mx:GridRow>
+		<mx:GridRow toolTip="Exit cells"
+					width="100%">
+			<mx:GridItem>
+				<s:Label text="ExC:"/>
+			</mx:GridItem>
+			<mx:GridItem width="100%">
+				<s:Label width="100%"
+						 text="{toStringCust(data.exits)}"
+						 maxDisplayedLines="2"
+						 maxWidth="350"/>
+			</mx:GridItem>
+		</mx:GridRow>
+		<mx:GridRow toolTip="Exit cells occupancy"
+					width="100%">
+			<mx:GridItem>
+				<s:Label text="ExO:"/>
+			</mx:GridItem>
+			<mx:GridItem width="100%">
+				<s:Label width="100%"
+						 text="{toStringCust(data.exitsOccupancy)}"
+						 maxDisplayedLines="2"
+						 maxWidth="350"/>
+			</mx:GridItem>
+		</mx:GridRow>
+	</mx:Grid>
+</s:ItemRenderer>

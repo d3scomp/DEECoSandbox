@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+		 xmlns:s="library://ns.adobe.com/flex/spark"
+		 xmlns:mx="library://ns.adobe.com/flex/mx"
+		 width="100%"
+		 height="100%">
+	<fx:Declarations>
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import d3s.playground.knowledges.RobotKnowledge;
+			import d3s.playground.vos.Field;
+			
+			import events.PGEvent;
+			
+			import flash.utils.setTimeout;
+			
+			import mx.binding.utils.BindingUtils;
+			import mx.collections.ArrayCollection;
+			import mx.events.CollectionEvent;
+			import mx.events.CollectionEventKind;
+			import mx.events.EffectEvent;
+			
+			import view.enums.EnumMove;
+			import view.robot.RobotView;
+			
+			import spark.effects.Move;
+			import spark.primitives.Graphic;
+			import spark.primitives.Path;
+			
+			private static const EFFECT_DURATION:int=1000;
+			
+			[Bindable]
+			public static var CELL_DISTANCE:int = 0;
+			[Bindable]
+			public static var ROW_COUNT:int = 0;
+			[Bindable]
+			public static var COL_COUNT:int = 0;
+			
+			private var _playgroundRobots:Vector.<RobotKnowledge> = new Vector.<RobotKnowledge>();
+
+			[Bindable]
+			public var movingRobots:ArrayCollection=new ArrayCollection();
+			
+			[Bindable]
+			public var cells:ArrayCollection;
+			
+			[Bindable]
+			public var animate:Boolean;
+
+			public function addRobots(v:Vector.<RobotKnowledge>):void
+			{
+				v.forEach(function(item:RobotKnowledge, index:int, vector:Vector.<RobotKnowledge>):void
+				{
+					if (_playgroundRobots.indexOf(item) < 0)
+						addRobotToPlayground(item);
+				});
+			}
+
+			private function addRobotToPlayground(rk:RobotKnowledge):void
+			{
+				_playgroundRobots.push(rk);
+				var rv:RobotView=new RobotView();
+				rv.width=rv.height=CELL_DISTANCE;
+				rv.robotKnowledge=rk;
+				grRobotContainer.addElement(rv);
+				BindingUtils.bindSetter(getAnimationFunction(rk, rv), rk.path, "path");
+				positionRobot(rv);
+			}
+			
+			private function getAnimationFunction(r:RobotKnowledge, rv:RobotView):Function {
+				return function (o:Object):void {
+					if (animate) {
+						var path:ArrayCollection = r.path.path;
+						if (path) {
+							var orientationPathLength:int = r.orientationPath.path.length;
+							if (path.length == orientationPathLength) {
+								onPathChange(rv);
+							} else if (path.length < orientationPathLength) {
+								onPathChange(rv, getAnimationFunction(r, rv));
+							}
+						}
+					}
+				}
+			}
+
+			private function positionRobot(rv:RobotView):void
+			{
+				var position:Field=rv.robotKnowledge.path.path.getItemAt(0) as Field;
+				rv.y=position.y * CELL_DISTANCE;
+				rv.x=position.x * CELL_DISTANCE;
+			}
+
+			private function onPathChange(rv:RobotView, endHandler:Function = null):void
+			{
+				var orientationPath:ArrayCollection = rv.robotKnowledge.orientationPath.path;
+				if (orientationPath.length)
+				{
+					var direction:EnumMove=orientationPath.removeItemAt(0) as EnumMove;
+					var moveEffect:Move=new Move(rv);
+					moveEffect.duration=EFFECT_DURATION;
+					moveEffect.xTo=moveEffect.xFrom=rv.x;
+					moveEffect.yTo=moveEffect.yFrom=rv.y;
+					switch (direction.ordinal)
+					{
+						case EnumMove.RIGHT.ordinal:
+							moveEffect.xTo=rv.x + CELL_DISTANCE;
+							break;
+						case EnumMove.LEFT.ordinal:
+							moveEffect.xTo=rv.x - CELL_DISTANCE;
+							break;
+						case EnumMove.FORWARD.ordinal:
+							moveEffect.yTo=rv.y - CELL_DISTANCE;
+							break;
+						case EnumMove.BACKWARD.ordinal:
+							moveEffect.yTo=rv.y + CELL_DISTANCE;
+							break;
+					}
+					movingRobots.addItem(rv.robotKnowledge);
+					moveEffect.addEventListener(EffectEvent.EFFECT_END, function(ee:EffectEvent):void
+					{
+						if (endHandler == null) {
+							var index:int=movingRobots.getItemIndex(rv.robotKnowledge);
+							if (index > -1)
+								movingRobots.removeItemAt(index);
+							rv.drawPath(rv);
+						} else {
+							endHandler();
+						}
+					});
+					moveEffect.play();
+				}
+			}
+
+			public function removeRobots():void
+			{
+				_playgroundRobots.splice(0,_playgroundRobots.length);
+				grRobotContainer.removeAllElements();
+			}
+			
+			private function onDoubleClick():void {
+				var pge:PGEvent = new PGEvent(PGEvent.DOUBLE_CLICKED, true);
+				pge.field = lstPlayGround.selectedItem as Field;
+				dispatchEvent(pge);
+			}
+			
+			private function onItemClick():void {
+				var pge:PGEvent = new PGEvent(PGEvent.CLICKED, true);
+				pge.field = lstPlayGround.selectedItem as Field;
+				dispatchEvent(pge);
+			}
+		]]>
+	</fx:Script>
+	<s:List id="lstPlayGround"
+			verticalCenter="0"
+			horizontalCenter="0"
+			dataProvider="{cells}"
+			doubleClick="onDoubleClick()"
+			click="onItemClick()"
+			doubleClickEnabled="true"
+			itemRenderer="PlaygroundCellItemRendedrer"
+			verticalScrollPolicy="off"
+			horizontalScrollPolicy="off">
+		<s:layout>
+			<s:TileLayout rowHeight="{CELL_DISTANCE}"
+						  columnWidth="{CELL_DISTANCE}"
+						  requestedColumnCount="{COL_COUNT}"
+						  requestedRowCount="{ROW_COUNT}"
+						  verticalGap="0"
+						  horizontalGap="0"/>
+		</s:layout>
+	</s:List>
+	<s:Group id="grRobotContainer"
+			 width="{lstPlayGround.width}"
+			 height="{lstPlayGround.height}"
+			 verticalCenter="0"
+			 horizontalCenter="0"/>
+</s:Group>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+		 xmlns:s="library://ns.adobe.com/flex/spark"
+		 xmlns:mx="library://ns.adobe.com/flex/mx"
+		 color="0xFFFFFF"
+		 width="170"
+		 height="25"
+		 visible="{indShow || show}"
+		 showEffect="{eIn}"
+		 hideEffect="{eOut}"
+		 mouseChildren="false"
+		 mouseEnabled="false"
+		 filters="{[new DropShadowFilter()]}">
+	<fx:Declarations>
+		<s:Fade id="eOut"
+				alphaFrom="1.0"
+				alphaTo="0.0"/>
+		<s:Fade id="eIn"
+				alphaFrom="0.0"
+				alphaTo="1.0"/>
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import d3s.playground.knowledges.RobotKnowledge;
+			import d3s.playground.vos.Path;
+			
+			import mx.collections.ArrayCollection;
+			import mx.events.CollectionEvent;
+			
+			import spark.filters.DropShadowFilter;
+
+			[Bindable]
+			public static var show:Boolean=false;
+
+			[Bindable]
+			public var indShow:Boolean=false;
+
+			private var _rk:RobotKnowledge;
+
+			[Bindable]
+			public function get robotKnowledge():RobotKnowledge {
+				return _rk;
+			}
+			
+			public function set robotKnowledge(value:RobotKnowledge):void {
+				if (_rk)
+					unbindFromPath(_rk.path);
+				_rk = value;
+				if (_rk)
+					bindToPath(_rk.path);
+			}
+			
+			private function bindToPath(p:Path):void {
+				p.path.addEventListener(CollectionEvent.COLLECTION_CHANGE, onPathChange);
+			}
+			
+			private function unbindFromPath(p:Path):void {
+				p.path.removeEventListener(CollectionEvent.COLLECTION_CHANGE, onPathChange);
+			}
+			
+			private function onPathChange(e:Event):void {
+				lblPath.text = _rk.path.path.toString();
+			}
+		]]>
+	</fx:Script>
+	<s:Rect width="100%"
+			height="100%"
+			radiusX="5"
+			radiusY="5">
+		<s:fill>
+			<s:SolidColor color="0"
+						  alpha=".5"/>
+		</s:fill>
+	</s:Rect>
+	<mx:Grid width="100%"
+			 paddingBottom="5"
+			 paddingTop="5"
+			 paddingLeft="5"
+			 paddingRight="5"
+			 height="100%"
+			 verticalAlign="middle">
+		<mx:GridRow toolTip="Path" height="100%" verticalAlign="middle">
+			<mx:GridItem>
+				<s:Label text="P:"/>
+			</mx:GridItem>
+			<mx:GridItem>
+				<s:Label id="lblPath"
+						 maxDisplayedLines="1"
+						 maxWidth="130"/>
+			</mx:GridItem>
+		</mx:GridRow>
+		<!--mx:GridRow toolTip="Battery Level">
+			<mx:GridItem>
+				<s:Label text="BL:"/>
+			</mx:GridItem>
+			<mx:GridItem>
+				<s:Label text="{toStringCust(data.batteryLevel)}"
+						 maxDisplayedLines="1"
+						 width="100%"/>
+			</mx:GridItem>
+		</mx:GridRow>
+		<mx:GridRow toolTip="Checkpoints">
+			<mx:GridItem>
+				<s:Label text="CP:"/>
+			</mx:GridItem>
+			<mx:GridItem>
+				<s:Label text="{toStringCust(data.checkPoints)}"
+						 maxDisplayedLines="1"
+						 width="100%"/>
+			</mx:GridItem>
+		</mx:GridRow-->
+	</mx:Grid>
+</s:Group>
